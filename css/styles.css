@@ -1,0 +1,156 @@
+html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: auto;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: auto;
+}
+#latacz
+{
+    border-bottom-left-radius: 100%;
+    padding-left: 8%;
+    padding-right:5%;
+    float: right;
+    background-color: rgba(173,93,93,1);
+}
+footer
+{
+    float:left;
+    width:100%;
+    background: linear-gradient(to bottom, rgba(204,187,187,1) 0%,rgba(173,93,93,1) 86%);
+}
+#kontener
+{
+    min-width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(204,187,187,1) 0%,rgba(173,93,93,1) 86%);
+}
+ul li:first-child
+{
+    padding-left: 0;
+    padding-top: 0;
+}
+ul li
+{
+    padding-left: 70px;
+    padding-top: 4%;
+}
+#header_kontener
+{
+    display: block;
+    padding-top: 2%;
+}
+#napis_header
+{
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left;
+    display: block;
+}
+#napis_header::before
+{
+    content: "PWJS";
+    font-weight: 600;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -80px;
+    background-color:black;
+}
+h1::before
+{
+    content: "";
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-left: -5px;
+    background-color:black;
+}
+h3::before
+{
+    margin-right: 5px;
+    content: "";
+    padding-right: 5px;
+    margin-left: -5px;
+    background-color:black;
+}
+h1,h2
+{
+    line-height: 1.4rem;
+}
+#portfolio
+{
+    overflow:hidden;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    background-color: white;
+}
+#portfolio p
+{
+    padding-top: 2%;
+}
+#portfolio img
+{
+    margin-top: 2%;
+    border-radius: 4% 4% 0 0;
+}
+#portfolio h2
+{
+    color: white;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    line-height: 50px;
+    background-color: rgba(173,93,93,1);
+}
+h4
+{
+    float: left;
+    padding-left: 5px;
+    line-height: 30px;
+    padding-bottom: 2%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: linear-gradient(to bottom, rgba(204,187,187,1) 0%,rgba(173,93,93,1) 86%);
+    color: white;
+    width: 100%;
+}
+.col-lg-6
+{
+    max-width: 20%;
+}
+#informacje
+{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+#informacje p
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#informacje h2
+{
+    transform: rotate3d(1, 1, 1, -7deg);
+    color: white;
+    width: 100%;
+    line-height: 50px;
+    background: linear-gradient(to bottom, rgba(204,187,187,1) 0%,rgba(173,93,93,1) 86%);
+}

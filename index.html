@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <title>Projekt HTML + Angular</title>
+    <meta name="description" content="Projekt HTML Angular">
+    <meta name="author" content="Mateusz Palewski">
+    <link rel="icon" href="assets/icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div id="latacz">
+            <nav class="navbar justify-content-center">
+                <ul class="navbar-nav list-group-horizontal ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#informacje">INFORMACJE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container" id="kontener">
+        <div id="header_kontener" class="text-center">
+            <div id="napis_header">
+                <h1 class="text-white">Projekt HTML + JS(Angular)</h1>
+                <h3>Mateusz Palewski 18903</h3>
+            </div>
+        </div>
+    </div>
+    <section ng-app="portfolioApp" ng-controller="GalleryListCtrl" id="portfolio" class="container text-center">
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="col-lg-6" ng-repeat="gallery in galleries">
+                <img id="zdjecie" class="img-fluid shadow" src="{{gallery.thumbnailUrl}}">
+                <h4 class="text-center shadow">{{gallery.title}}</h4>
+            </div>
+        </div>
+    </section>
+    <section id="informacje" class="container text-center">
+        <h2>Informacje</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices rhoncus nibh id sollicitudin. Nulla
+            feugiat
+            pulvinar quam porta facilisis. Maecenas tortor tortor, luctus sodales dignissim a, porttitor sit amet nisl.
+            Nam rhoncus
+            sem in faucibus mattis. Morbi sit amet aliquam turpis. Donec ut purus lorem. Morbi nec quam non odio aliquam
+            consequat.
+            Suspendisse potenti. Praesent sit amet pulvinar mauris, convallis consequat metus. Sed fermentum, risus in
+            interdum
+            viverra, metus ligula gravida ipsum, eu sollicitudin velit ante vel lectus. Ut ut lorem ut dolor tempor
+            fermentum nec
+            mollis nunc. Vivamus tincidunt neque eu scelerisque rutrum. Donec vel viverra est. Fusce porttitor leo
+            ornare metus
+            commodo, nec cursus leo faucibus.
+
+            Etiam dictum at orci non volutpat. Suspendisse ac enim ut dolor iaculis tincidunt id a orci. Donec sit amet
+            tempus elit.
+            Donec feugiat eget ex sit amet ultricies. Morbi ac mauris volutpat, sagittis dolor sodales, eleifend ligula.
+            Etiam
+            vulputate a dui eu gravida. Integer et ullamcorper enim. Proin aliquet nulla elit, a vulputate urna
+            pellentesque in. In
+            posuere tempor nulla, eu molestie velit luctus in. Suspendisse sit amet urna pulvinar, iaculis nisi sed,
+            molestie enim.
+            Ut nec facilisis diam. Sed id lacinia arcu. In hac habitasse platea dictumst.
+
+            Maecenas ex ex, sodales et vestibulum at, rutrum ut nibh. Phasellus luctus blandit mi, vitae tincidunt arcu
+            tempor sit
+            amet. Nullam eu condimentum elit. Ut et feugiat leo, ac tincidunt mi. Nunc efficitur porta cursus. Curabitur
+            tristique
+            iaculis turpis ac hendrerit. Curabitur et purus commodo, ornare enim eu, ultrices risus.
+
+            Aenean vestibulum nulla eu justo malesuada hendrerit. Proin fermentum enim eget odio bibendum vulputate.
+            Donec eu sem a
+            dui viverra lacinia. Maecenas congue odio a turpis dictum malesuada. Suspendisse nulla leo, venenatis porta
+            faucibus
+            eget, scelerisque nec sem. Etiam in nibh id felis feugiat imperdiet a sed eros. Praesent vulputate elementum
+            hendrerit.
+            Maecenas erat nisl, gravida at mi varius, porttitor egestas sem. Etiam varius lacus sit amet tortor
+            ultricies, ut rutrum
+            urna convallis. Sed feugiat tincidunt erat fringilla rhoncus. Mauris eu interdum mauris. Nam massa felis,
+            semper quis
+            porttitor eu, pharetra sit amet purus. Pellentesque pellentesque dolor quis diam mollis, sit amet gravida
+            nibh
+            fringilla. Phasellus tempor, sapien ut ultricies interdum, dolor erat volutpat sem, sed vehicula arcu risus
+            sed dolor.
+
+            Praesent molestie tellus nisl, et tristique mauris mollis et. Curabitur pulvinar euismod elementum. Duis
+            eleifend dui
+            risus, non fermentum est elementum ac. Phasellus finibus, dolor non faucibus sollicitudin, nibh sem
+            sollicitudin arcu, a
+            lacinia sem ligula ac lectus. In in sapien sit amet magna ultricies facilisis. Mauris suscipit ligula vel
+            ultricies
+            tempus. Aliquam erat volutpat. Cras viverra, nunc non consectetur finibus, sem lorem commodo elit, sed
+            placerat magna
+            lorem ut lacus. Fusce cursus justo vel dapibus pulvinar. Proin aliquet cursus porttitor. Morbi maximus massa
+            tellus, in
+            varius justo congue non. Pellentesque eu vestibulum ligula.</p>
+
+    </section>
+    <footer class="text-white">
+        <div class="footer-copyright text-center py-3">Mateusz Palewski 18903
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+
+</html>
