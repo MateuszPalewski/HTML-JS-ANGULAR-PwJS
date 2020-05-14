@@ -1,4 +1,4 @@
-# HTML-JS-ANGULAR--PwJS
+# HTML-JS-ANGULAR-PwJS
 
 Autor: Mateusz Palewski, 18903
 
